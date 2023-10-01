@@ -1,6 +1,6 @@
 import 'package:ec_site/Authentication/user_registration.dart';
+import 'package:ec_site/Company/product_registration.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 import '../Authentication/user_login.dart';
 
@@ -82,6 +82,16 @@ class _MyHomePageState extends State<HomeScreen> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const UserLoginScreen()));
+              },
+            ),
+            ListTile(
+              title: Text('商品登録画面'),
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const ProductRegistrationScreen()));
               },
             ),
           ],
